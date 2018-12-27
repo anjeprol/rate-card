@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_rate_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_top_down"
+    android:layout_marginLeft="@dimen/margins_dialog"
+    android:layout_marginRight="@dimen/margins_dialog">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/margin_top_down"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_profile"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/cl_rate_profile"
+        app:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/cl_rate_profile"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_edges"
+        android:layout_marginStart="@dimen/margin_edges"
+        android:layout_marginTop="@dimen/margin_top"
+        android:ellipsize="end"
+        android:hint="survey"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_alert"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_toRightOf="@id/cl_rate_profile"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_edges"
+        android:layout_marginStart="@dimen/margin_edges"
+        android:layout_marginTop="@dimen/margin_top"
+        android:ellipsize="end"
+        android:hint="service"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_alert"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_toRightOf="@id/cl_rate_profile"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message" />
+
+    <ImageView
+        android:id="@+id/bt_star_one"
+        android:layout_width="@dimen/star_square"
+        android:layout_height="@dimen/star_square"
+        android:layout_marginStart="@dimen/margin_edges"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/ic_star_border"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintLeft_toRightOf="@+id/tv_service"
+        app:layout_constraintRight_toLeftOf="@+id/bt_star_two"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+    <ImageView
+        android:id="@+id/bt_star_two"
+        android:layout_width="@dimen/star_square"
+        android:layout_height="@dimen/star_square"
+        android:layout_marginStart="@dimen/margin_edges_stars"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/ic_star_border"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_toLeftOf="@+id/bt_star_three"
+        app:layout_constraintStart_toEndOf="@id/bt_star_one"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+    <ImageView
+        android:id="@+id/bt_star_three"
+        android:layout_width="@dimen/star_square"
+        android:layout_height="@dimen/star_square"
+        android:layout_marginStart="@dimen/margin_edges_stars"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/ic_star_border"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_toLeftOf="@+id/bt_star_four"
+        app:layout_constraintStart_toEndOf="@id/bt_star_two"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+    <ImageView
+        android:id="@+id/bt_star_four"
+        android:layout_width="@dimen/star_square"
+        android:layout_height="@dimen/star_square"
+        android:layout_marginStart="@dimen/margin_edges_stars"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/ic_star_border"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_toLeftOf="@+id/bt_star_five"
+        app:layout_constraintStart_toEndOf="@id/bt_star_three"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+    <ImageView
+        android:id="@+id/bt_star_five"
+        android:layout_width="@dimen/star_square"
+        android:layout_height="@dimen/star_square"
+        android:layout_marginEnd="@dimen/margin_edges"
+        android:layout_marginStart="@dimen/margin_edges_stars"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/ic_star_border"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cl_rate_profile"
+        app:layout_constraintRight_toRightOf="@+id/cl_rate_profile"
+        app:layout_constraintStart_toEndOf="@id/bt_star_four"
+        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+
+</android.support.constraint.ConstraintLayout>
